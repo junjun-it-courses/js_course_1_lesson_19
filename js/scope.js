@@ -4,7 +4,7 @@
 
 // var foo = "foobar";
 // foo === window.foo; // Возвращает: true
-
+//
 // function greeting() {
 //     console.log("Hi!");
 // }
@@ -16,10 +16,15 @@
 //     let carName = "Volvo";
 //     var ExVar = 'string';
 //     const ExConstVar = 'some const variable'
+//
+//     function vova() {
+//         console.log('vova')
+//     }
 //     // code here CAN use carName
 // }
 //
-// console.log(carName, ExVar, ExConstVar)
+// console.log(ExVar)
+// console.log(carName, ExVar, ExConstVar, vova)
 
 
 // Block Scope / ES6 JS Standart
@@ -30,8 +35,20 @@
 // (let, const) в {} - Функции, условия, Циклы ...
 
 // {
-//     let x = 2;
 //     var y = 3;
+//     let x = 2;
+//     const z = 15;
+//     console.log(x)
+//     console.log(z)
 // }
 //
-// console.log(x, y)
+// console.log(y)
+// console.log(x)
+// console.log(z)
+
+// if(true) {
+//     let alex = 321;
+// }
+//
+// // console.log(vova)
+// console.log(alex)

@@ -9,13 +9,20 @@
 
 // (function () {
 //     let aName = "Barry";
+//
+//
+//
 // })();
+//
+// console.log(aName)
 
 
 // let result = (function () {
 //     let name = "Barry";
 //     return name;
 // })();
+//
+// console.log(result)
 
 //Переменная, которой присвоено IIFE, хранит в
 // себе результат выполнения функции, но не саму функцию.

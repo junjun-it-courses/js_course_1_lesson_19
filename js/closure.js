@@ -6,35 +6,55 @@
 // будет домупна и во воложенной функции displayName так
 // как находятся в одной области видимости
 
+// let vova = 'Dog';
+
 // function init() {
-//     const name = "Mozilla";     // name - локальная переменная, созданная в init
-//     function displayName() {    // displayName() - внутренняя функция, замыкание
-//         alert (name);           // displayName() использует переменную, объявленную в родительской функции
+//     const vova = "Mozilla";     // name - локальная переменная, созданная в init
+//
+//     function displayName() {    // displayName() - внутренняя функция, замыкани
+//         alert (vova);           // displayName() использует переменную, объявленную в родительской функции
+//
+//         function lll( ) {
+//             console.log(vova)
+//         }
+//
+//         lll();
+//
 //     }
+//
+//     function showMe() {
+//         console.log(vova)
+//     }
+//
 //     displayName();
+//     // showMe()
 // }
+//
+//
 // init();
 
 
-// Closure
 
+// Closure
 
 // После выполнения функция удаляется, а значит удаляются и все
 // переменные(агрументы) которые в ней существовали на момент вызова
 
 // На самом деле это так, но не всегда
 
-// function makeFunc() {
-//     const name = "Mozilla";
-//     function displayName() {
-//         alert(name);
-//     }
-//     return displayName;
-// }
-//
-//
-// let myFunc = makeFunc();
-// myFunc();
+function makeFunc() {
+    const name = "Mozilla";
+
+    function displayName() {
+        alert(name);
+    }
+
+    return displayName;
+}
+
+
+let myFunc = makeFunc();
+myFunc();
 
 
 // В примере выше мы можем видеть что функция makeFunc была вызвана и выполнена
